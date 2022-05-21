@@ -1,7 +1,7 @@
 import useCounter from "../hooks/useCounter";
 import styles from "./styles.module.scss";
 
-function Counter({ initialValue }) {
+function Counter({ initialValue = 0 }) {
   const [counter, setCounter] = useCounter(initialValue);
 
   return (
